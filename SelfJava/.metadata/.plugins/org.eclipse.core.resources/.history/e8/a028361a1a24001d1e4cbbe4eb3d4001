@@ -1,0 +1,25 @@
+package kr.brains.api;
+
+public class APIExample {
+
+	public static void main(String[] args) {
+		// shift 연산은 비트단위 연산
+		// 128을 비트패턴 1000 0000 오른쪽으로 3 밀기
+		// 1번 오른쪽으로 밀 때마다 2로 나누는 효과
+		System.out.println(Integer.toBinaryString(128));
+		System.out.println(128 >> 3);
+		System.out.println(128 << 3);
+		
+		
+		Integer intRef = new Integer(100);
+		try {
+			Integer intRef2 = Integer.valueOf("100L");
+		} catch(NumberFormatException nfe) {
+			System.out.println("예외발생 처리: " + nfe.getMessage());  
+		}
+		Integer intRef2 = Integer.valueOf(100);
+		Integer intRef3 = (Integer) 100;  //autoboxing
+		
+	}
+
+}

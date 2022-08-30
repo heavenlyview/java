@@ -1,0 +1,20 @@
+package chap06;
+
+public class caculator {
+	private int operand1;
+	private int operand2;
+	private String operator;
+	
+	public int calc() {
+		int result = 0;
+		if(operator.equals("+"))
+			result = operand1 + operand2;
+		else if(operator.equals("-"))
+			result = operand1 - operand2;
+		else if(operator.equals("*"))
+			result = operand1 * operand2;
+		else if(operator.equals("/"))
+			result = operand1 / operand2;
+		return result;
+	}
+}

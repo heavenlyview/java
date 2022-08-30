@@ -1,0 +1,6 @@
+package kr.brains.interf;
+
+public interface Messenger {
+	void sendMessage(String phonenumber, String msg);
+	void receiveMsg();
+}
